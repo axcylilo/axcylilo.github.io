@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Lock</title>
+    <link rel="stylesheet" href="2nd.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Secret Code</h2>
+        <p class="hint">Hint: My birthday mwehehe :P (YYMMDD)</p>
+        
+        
+        <input type="password" id="codeInput" readonly>
+
+        
+        <div class="keypad">
+            <button onclick="enterNumber(1)">1</button>
+            <button onclick="enterNumber(2)">2</button>
+            <button onclick="enterNumber(3)">3</button>
+            <button onclick="enterNumber(4)">4</button>
+            <button onclick="enterNumber(5)">5</button>
+            <button onclick="enterNumber(6)">6</button>
+            <button onclick="enterNumber(7)">7</button>
+            <button onclick="enterNumber(8)">8</button>
+            <button onclick="enterNumber(9)">9</button>
+            <button onclick="clearInput()">⌫</button>
+            <button onclick="enterNumber(0)">0</button>
+        </div>
+
+        
+        <button class="unlock" onclick="checkCode()">Unlock</button>
+
+        
+        <p id="message"></p>
+    </div>
+
+    <script src="2nd.js"></script>
+</body>
+</html>

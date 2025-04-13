@@ -1,0 +1,111 @@
+
+body {
+    background-color: #fff8f6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+
+h2 {
+    color: #ff6680;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.hint {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+
+#codeInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #ff99a8;
+    border-radius: 6px;
+    background-color: #fff0f2;
+    font-weight: bold;
+    letter-spacing: 2px;
+    pointer-events: none; 
+    max-width: 250px;
+}
+
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 10px auto;
+    padding: 10px;
+    background: transparent;
+    width: fit-content;
+}
+
+
+.keypad button {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #d3b8ae;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+.keypad button:hover {
+    background: rgba(211, 184, 174, 0.2);
+}
+
+.keypad button:active {
+    background: rgba(211, 184, 174, 0.4);
+}
+
+
+.unlock {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: #ff6680;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.unlock:hover {
+    background: #ff3366;
+}
+
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
